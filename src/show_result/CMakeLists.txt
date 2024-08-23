@@ -1,16 +1,15 @@
-project(process)
+project(show_result)
 
 add_library(${PROJECT_NAME}
 SHARED
-process.cpp
+show_result.cpp
 )
+
 target_include_directories(${PROJECT_NAME}
 PUBLIC
-${PNC_Map_Dir}
 )
 
 target_link_libraries(${PROJECT_NAME}
 PUBLIC
-pnc_map
-Eigen3::Eigen
+easyx
 )
